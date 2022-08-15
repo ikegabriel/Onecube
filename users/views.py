@@ -50,7 +50,8 @@ def get_reg(request):
                     'registration_number': i['registration_number'],
                 }
                 if not Otp.objects.filter(registration_number=student['registration_number']):
-                    otp = generate_otp()
+                    # otp = generate_otp()
+                    otp = 111111
                     add_otp = Otp.objects.create(registration_number=student['registration_number'], otp_code=otp)
                     send_mail(
                         'Onecube Otp',
@@ -171,7 +172,7 @@ def create_user(request):
                         pret = NewUser.objects.filter(email=str(student['email']))
                         prat = pret.values_list('id')
                         success = 'Your Registration Was Successful'
-                        return render(request, 'create_user.html', {'success':success})
+                        return redirect('user_login')
                     else:
                         pass
                 elif i['registration_number'] != registration_number:

@@ -87,9 +87,9 @@
             <h3>Featured Movies</h3>
             <p>View movies on our featured list. Each movie has a 5-star rating.</p>
         </div>
-
+        {%for film in movs%}
         <div class="landing-movies-thumbnail">
-            {%for film in movs%}
+            
                 
             <div class="landing-movies-thumbnail-starter">
                 <a href="{%url 'get_reg'%}" onclick="alert('You have to be registerd to watch movies')">
@@ -116,8 +116,9 @@
                     <p>{{film.description}}</p>
                 </div>
             </div>
-            {%endfor%}
+            
         </div>
+        {%endfor%}
     </div>
 
     <div class="faq-wrapper">
