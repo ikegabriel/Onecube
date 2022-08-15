@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s!w7yzmi0hwq2_sh7xyle5i1*to22rj&-bco_xx&sdr#l@1qp$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['zurifordummies', '127.0.0.1', 'localhost', 'onecube.zurifordummies.com', 'www.onecube.zurifordummies.com']
+ALLOWED_HOSTS = ['zurifordummies', '127.0.0.1', 'localhost', 'onecube.herokuapp.com', 'www.onecube.zurifordummies.com']
 
 
 # Application definition
