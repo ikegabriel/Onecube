@@ -86,8 +86,12 @@ WSGI_APPLICATION = 'col_films111.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd953ap9806rs2b',
+        'HOST': 'ec2-54-86-106-48.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'smfsluddxhyajj',
+        'PASSWORD': 'c9e3ce3c78d126953d2f67118a4d09eb42ce7eb0ee18ebd44675414d0237ff3d'
     }
 }
 

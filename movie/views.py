@@ -8,7 +8,7 @@ from moviepy.editor import *
 
 
 def index(request):
-    movs = Movie.objects.all()
+    movs = Movie.objects.all()[:3]
     data = {
         'movs': movs
     }

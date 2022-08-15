@@ -87,9 +87,9 @@
             <h3>Featured Movies</h3>
             <p>View movies on our featured list. Each movie has a 5-star rating.</p>
         </div>
+
         <div class="landing-movies-thumbnail">
             {%for film in movs%}
-            {% for i in '123' %}
                 
             <div class="landing-movies-thumbnail-starter">
                 <a href="{%url 'get_reg'%}" onclick="alert('You have to be registerd to watch movies')">
@@ -100,7 +100,7 @@
                 </a>
             </div>
             <div class="landing-movie-details">
-                <h1>Class of Rowdies</h1>
+                <h1>{{film.title}}</h1>
                 <div class="star-wrapper">
                     <span><img src="{%static 'star.png'%}" alt=""></span>
                     <span><img src="{%static 'star.png'%}" alt=""></span>
@@ -109,16 +109,13 @@
                     <span><img src="{%static 'star.png'%}" alt=""></span>
                 </div>
                 <div class="movie-time">
-                    <p>175 views</p>
                     <p>|</p>
-                    <p>10m 8s</p>
+                    <p>{{film.length}}m</p>
                 </div>
                 <div class="landing-movie-text">
-                    <p>A child wants to fly, but without direction they can stray. They act out or withdraw from
-                        everyone when misunderstood.</p>
+                    <p>{{film.description}}</p>
                 </div>
             </div>
-            {%endfor%}
             {%endfor%}
         </div>
     </div>
