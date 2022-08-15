@@ -1,0 +1,2383 @@
+*,
+*::before,
+*::after {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* LANDING PAGE STYLES */
+
+.landing-page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 6px;
+  width: 100%;
+  padding: 16px;
+  background-color: #181925;
+}
+
+.header-left-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+
+.landing-header-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fca311;
+}
+
+.header-right-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+}
+
+.header-sign-in {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #e5e5e5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-sign-in:hover {
+  color: #fca311;
+}
+
+.header-get-started {
+  border: none;
+  width: 107px;
+  height: 34px;
+  background: #fca311;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #010210;
+}
+
+.landing-top-container {
+  text-align: center;
+  background-color: #010210;
+}
+
+.landing-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.clapperboard {
+  width: 305px;
+  height: 305px;
+  border-radius: 50%;
+}
+
+.landing-intro-text {
+  width: 351px;
+  min-height: 192px;
+  text-align: center;
+}
+
+.landing-intro h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fca311;
+  width: 238px;
+  margin: auto;
+}
+
+.landing-intro p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #e5e5e5;
+  width: 251px;
+  margin: 16px auto;
+}
+
+.landing-intro button {
+  text-decoration: none;
+  width: 129px;
+  height: 43px;
+  background: #fca311;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  color: #010210;
+}
+
+.landing-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 26px 40px;
+  background-color: #181925;
+  text-align: center;
+}
+
+.landing-section-2-top h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fca311;
+  margin: auto;
+  width: 283px;
+  height: 71px;
+}
+
+.landing-section-2-top p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  width: 349px;
+  height: 39px;
+}
+
+.landing-section-2-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #52acc1;
+  border-radius: 15px;
+  width: 138px;
+  height: 118px;
+  margin: auto;
+}
+
+.landing-section-2-image img {
+  width: 119px;
+  height: 85px;
+}
+
+.landing-section-2-content a {
+  color: #fca311;
+  text-decoration: none;
+}
+
+.landing-section-2-content a:hover {
+  color: #e5e5e5af;
+}
+
+.landing-section-2-content h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  width: 129px;
+  height: 39px;
+  margin: 16px auto 0;
+}
+
+.landing-section-2-content p {
+  width: 177px;
+  height: 59px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e5e5e5;
+  margin: 0 auto;
+}
+
+.landing-section-2 button {
+  text-decoration: none;
+  width: 129px;
+  height: 43px;
+  background: #fca311;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  color: #010210;
+}
+
+.landing-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  background-color: #010210;
+  width: 100%;
+  min-height: 900px;
+  padding: 24px;
+}
+
+.landing-section-3 h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fca311;
+}
+
+.featured-movies p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.landing-movies-thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 257px;
+  /* height: 379px; */
+  margin: auto;
+}
+
+.landing-movies-thumbnail-starter {
+  display: contents;
+}
+
+.landing-movies-thumbnail h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #fca311;
+}
+
+.landing-movie-details {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  background-color: #e5e5e5;
+  height: 145px;
+  width: 257px;
+  border-radius: 0 0 15px 15px;
+  padding: 12px;
+  column-gap: 13px;
+}
+
+.landing-movie-details h1 {
+  width: 226px;
+  grid-column: 1 / -1;
+  margin: auto;
+}
+
+.movie-time {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.movie-time p {
+  width: 42px;
+  height: 12px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #010210;
+  margin: 0 auto;
+}
+
+.landing-movie-text {
+  width: 232px;
+  height: 47px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #010210;
+  text-align: left;
+}
+
+.faq-wrapper {
+  width: 100%;
+  background-color: #181925;
+  text-align: left;
+  padding: 25px;
+  position: relative;
+}
+
+.faq h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 44px;
+  color: #e5e5e5;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 44px;
+  color: #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.questions:last-child {
+  border: none;
+}
+
+.questions p {
+  margin: 0;
+}
+
+.question-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+.answer1,
+.answer2,
+.answer3,
+.answer4,
+.answer5 {
+  display: none;
+  color: #ffffffb6;
+}
+
+.answer2 a {
+  color: #fca311;
+}
+
+.answer2 a:hover {
+  cursor: pointer;
+  color: #e5e5e5;
+}
+
+.question1:hover,
+.question2:hover,
+.question3:hover,
+.question4:hover,
+.question5:hover {
+  cursor: pointer;
+}
+
+.question1:hover .answer1,
+.question2:hover .answer2,
+.question3:hover .answer3,
+.question4:hover .answer4,
+.question5:hover .answer5 {
+  display: block;
+}
+
+.faq-image-wrapper {
+  /* position: relative; */
+  text-align: center;
+  width: 112.77px;
+  height: 97.22px;
+  margin: auto;
+}
+
+.faq-oval {
+  width: 13.72px;
+  height: 12.72px;
+  position: absolute;
+  right: 140px;
+  top: 22px;
+}
+
+.faq-plus {
+  fill: none;
+}
+
+.faq-cross {
+  width: 13.57px;
+  height: 13.57px;
+  position: absolute;
+  left: 140px;
+  top: 63px;
+}
+
+.faq-speaker {
+  width: 89px;
+  height: 90px;
+}
+
+.how-to-use {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 16px;
+  background-color: #010210;
+}
+
+.how-to-use h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 60px;
+  color: #e5e5e5;
+}
+
+.how-to-video {
+  width: 289px;
+}
+
+.how-to-use button {
+  text-decoration: none;
+  width: 127px;
+  height: 43px;
+  background: #fca311;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  color: #010210;
+}
+
+/* END OF LANDING PAGE STYLES */
+
+/* SIGN-IN STYLES */
+.top-container {
+  background-color: #010210;
+  position: relative;
+  height: 30.813rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .logo-container {
+  width: 100%; 
+  height: 1.6rem;
+} */
+
+.top-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 23px;
+  height: 29px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 10px;
+  position: relative;
+  color: #ffffff;
+  width: 100%;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-content h2 {
+  margin: 28px 0;
+}
+
+.login-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  width: 231px;
+  height: 26px;
+}
+
+/* .sign-in-area {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 8px 24px;
+  gap: 10px;
+} */
+
+.sign-in-email,
+input[type="password"] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 10px;
+  width: 23.5rem;
+  height: 2.5rem;
+  left: 27px;
+  top: 311px;
+  border: 1px solid #8a8989;
+  border-radius: 8px;
+  background: transparent;
+  color: #8a8989;
+  caret-color: #8a8989;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid #40dee8;
+}
+
+input::placeholder {
+  color: rgba(229, 229, 229, 0.7);
+}
+
+.sign-in-area button {
+  color: #010210;
+  width: 130.94px;
+  height: 38.34px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.874px;
+  line-height: 22px;
+  background: #fca311;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 12px rgba(137, 21, 21, 0.61);
+}
+
+button:active {
+  background: #de9721;
+  box-shadow: 0px 4px 12px rgba(137, 21, 21, 0.61);
+}
+
+button:disabled {
+  background: #fdd188;
+}
+
+.forgot-password {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fca311;
+}
+
+/* END OF SIGN-IN STYLES */
+
+/* DASHBOARD STYLES */
+
+.header-for-desktop {
+  display: none;
+}
+.header-for-mobile .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1.5em;
+  background: #191925;
+}
+.header-for-mobile .search-fields {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+  background: #010210;
+}
+.header-for-mobile .search-fields input,
+select {
+  border-top: 4px solid #fca311;
+  border-right: 8px solid #fca311;
+  border-bottom: 4px solid #fca311;
+  border-left: 8px solid #fca311;
+  border-radius: 8px;
+  width: 100%;
+  padding: 0.6em;
+  margin-left: 12px;
+}
+.notification-panel {
+  display: flex;
+}
+.notification-panel * + * {
+  padding-left: 12px;
+}
+.logo {
+  width: 38px;
+}
+nav {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 100vw;
+  width: 100%;
+  height: 100vh;
+  background-color: #01010b;
+  padding: 2.5em 0 0 3em;
+  transition: 500ms ease-in-out all;
+}
+nav.active {
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #01010b;
+  padding: 5em 0 0 4em;
+  right: 0vw;
+}
+nav h4 {
+  margin: 1em 0;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  text-decoration: none;
+}
+nav li {
+  list-style: none;
+  line-height: 40px;
+  margin: 0.4em 0;
+}
+nav li a img {
+  margin-right: 16px;
+}
+nav li:focus,
+nav li:active,
+nav li:hover {
+  filter: invert(64%) sepia(44%) saturate(1066%) hue-rotate(351deg)
+    brightness(102%) contrast(98%);
+  border-right: 10px solid #1d3f4b;
+}
+nav #close-icon {
+  position: absolute;
+  top: 3.5em;
+  right: 3em;
+  width: 40px;
+}
+.dashboard-main {
+  padding: 2em;
+  background-color: #010210;
+}
+.gallery {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+section h1 {
+  font-size: 2em;
+  color: white;
+  margin: 0.5em 0;
+}
+.video-description {
+  padding: 1em;
+  background-color: white;
+}
+.video-description * + * {
+  margin-top: 0.3em;
+}
+.ratings {
+  margin: 0.3em 0;
+}
+.ratings * + * {
+  margin-left: 0.3em;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background-color: #01010b;
+  height: 8px;
+  width: 12px;
+  margin: 1em 0;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-appearance: none;
+  background-color: rgba(229, 229, 229, 0.7);
+  border-radius: 8px;
+  border: 1px solid rgb(86, 87, 91);
+}
+
+/* END OF DASHBOARD STYLE */
+
+/* FORGOT PASSWORD STYLES */
+
+.forgot-password-main main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  max-width: 40em;
+  margin: auto;
+  text-align: left;
+  color: white;
+}
+.forgot-password-main h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 13px 0;
+}
+
+.forgot-password-main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.forgot-password-form {
+  display: flex;
+  flex-direction: column;
+}
+.forgot-password-form input {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background: transparent;
+  padding: 18px;
+  margin: 24px 0;
+  color: white;
+}
+
+.forgot-password-form small {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+/* Creating a custom checkbox */
+.checkbox-container {
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.checkbox {
+  height: 25px;
+  width: 25px;
+  background-color: #010210;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+/* Specify the background color to be
+shown when checkbox is checked */
+.checkbox-container input:checked ~ .checkbox {
+  background-color: #010210;
+}
+
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Display checkmark when checked */
+.checkbox-container input:checked ~ .checkbox:after {
+  display: block;
+}
+
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.checkbox-container .checkbox:after {
+  left: 8px;
+  bottom: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.forgot-password-form small {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  width: 380px;
+  height: 32px;
+  color: #ffffff;
+}
+
+.forgot-password-form button {
+  color: black;
+  border-radius: 10px;
+  background: #fca311;
+  width: 130.94px;
+  height: 38.34px;
+  font-weight: 700;
+  font-size: 18.874px;
+  line-height: 22px;
+  border: none;
+}
+
+.otp-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  width: 864px;
+  height: 76px;
+}
+
+.otp-input {
+  color: #ffffff;
+  margin-right: 0.3rem;
+  text-align: center;
+  background: transparent;
+  width: 36.8px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  transition: all 0.1s;
+}
+
+.otp-input-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reset-password {
+  color: #fca311;
+}
+
+/* END OF FORGOT PASSWORD STYLES */
+
+/* TERMS STYLES */
+
+.terms ol {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Navbar styles */
+.terms.header {
+  padding: 40px 70px;
+  background: #01010b;
+}
+
+.terms.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terms.logo img {
+  width: 40px;
+  height: 50.4px;
+}
+
+.terms.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.terms.buttons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #010210;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.terms.signUp {
+  background: #fca311;
+  width: 174px;
+  margin-left: 59px;
+}
+
+.terms.signIn {
+  background: #e5e5e5;
+  width: 163px;
+}
+
+/* Main sectio styles */
+.terms.main {
+  padding: 40px 70px;
+  background: #01010b;
+  color: #fff;
+}
+
+.terms.h1 {
+  margin-bottom: 101px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.terms.h2Content {
+  margin-bottom: 40px;
+}
+
+.terms.h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.terms.content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.terms.content p {
+  margin: 8px 0;
+}
+
+.terms.content .alpha {
+  list-style: lower-alpha;
+  list-style-position: inside;
+}
+
+.terms.h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 5px 0;
+}
+
+.subOl {
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+.classCounter {
+  counter-reset: item;
+  list-style-type: none;
+}
+
+.liCounter {
+  display: table;
+  counter-increment: item;
+}
+
+.liCounter::before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 5px;
+}
+
+.permOl {
+  list-style: decimal;
+  list-style-position: inside;
+  padding-right: 5px;
+}
+
+.liCounter.h3 {
+  padding-bottom: 40px;
+}
+
+.liCounter.h3::before {
+  font-size: 24px;
+}
+
+/* END OF TERMS STYLES */
+
+/* LIBRARY STYLES */
+
+/* Header styles */
+.library--header {
+  background-color: #181925;
+  padding: 20px 25px 15px 25px;
+}
+
+.library.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notifications {
+  display: none;
+}
+
+.searchIcon {
+  display: none;
+}
+
+.library.searchCategory {
+  display: none;
+}
+
+/* Main styles */
+
+.library.main {
+  padding: 19px 16px;
+  background: #010210;
+  display: flex;
+  flex-direction: column;
+}
+
+.library.sideBar {
+  display: none;
+}
+
+.library.dropSearchCategory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  margin-top: 19px;
+}
+
+.mobileBar {
+  position: absolute;
+  top: 170px;
+  left: -100%;
+  padding-left: 20px;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  transition: all ease-in 0.3s;
+  z-index: 99;
+}
+
+.mobileBar.active {
+  left: 0;
+}
+
+.mobileBarLink {
+  color: white;
+}
+
+.mobileBarList {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 19px;
+}
+
+.mobileBarList p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.library.search,
+.library.category {
+  padding: 5px 8px;
+  background: #fca311;
+  border-radius: 10px;
+  width: 43%;
+}
+
+.library.searchWrap,
+.library.categoryWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  padding-right: 7.6px;
+  width: 100%;
+}
+
+.library.search svg,
+.library.category svg {
+  min-width: 12.5px;
+}
+
+.library.search input,
+.library.category input {
+  width: 80%;
+  padding: 7.8px 8px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #000;
+}
+
+.library.completedMovies,
+.library.continueWatching {
+  color: #fff;
+}
+
+.library.completedMovies--top,
+.library.continueWatching--top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.library.completedMovies--left,
+.library.completedMovies--right,
+.library.continueWatching--left,
+.library.continueWatching--right {
+  display: flex;
+  align-items: center;
+}
+
+.library.completedMovies--left,
+.library.continueWatching--left {
+  gap: 12.29px;
+}
+
+.library.completedMovies--left p,
+.library.continueWatching--left p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.library.completedMovies--right,
+.library.continueWatching--right {
+  gap: 6.5px;
+  padding-right: 33.25px;
+}
+
+.library.arrowCircle {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 17.5px;
+  height: 17.5px;
+}
+
+.library.completedMovies--bottom,
+.library.continueWatching--bottom {
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  /* justify-items: center; */
+}
+
+.library.continueWatching--bottom {
+  margin-bottom: 52px;
+}
+
+#slides-container,
+#slides-container1 {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.slide,
+.slide1 {
+  flex: 1 0 25%;
+}
+
+.library.moviesBox {
+  width: 25%;
+}
+
+.library.moviesImg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.library.moviesImg progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+}
+
+.library.moviesImg progress[value]::-webkit-progress-bar {
+  background: #eee;
+}
+
+.library.moviesImg progress[value]::-webkit-progress-value {
+  background-color: red;
+}
+
+.library.moviesImgWrap {
+  width: 100%;
+  position: relative;
+}
+
+.library.moviesImgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.library.movieLength {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  padding: 0 2px;
+  background: #000;
+  color: #fff;
+  font-size: 6px;
+  line-height: 7px;
+  font-weight: 500;
+}
+
+.library.movieDetails {
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.library.movieTitle {
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 7px;
+  color: #01010b;
+  margin-bottom: 5.87px;
+}
+
+.library.movieRating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.67px;
+  margin-bottom: 5.87px;
+}
+
+.library.movieCreator {
+  font-weight: 600;
+  font-size: 6px;
+  line-height: 7px;
+  color: #01010b;
+  margin-bottom: 2px;
+}
+
+.library.movieViews {
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7px;
+  color: #01010b;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.library.line {
+  width: 100%;
+  height: 1.5px;
+  background: #e5e5e5;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+/* END OF LIBRARY STYLES */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: 100%;
+  height: 47.625rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #010210;
+  text-align: center;
+  padding: 32px 90px 25px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: 248px;
+  height: 633px;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0;
+}
+
+.footer-description {
+  text-align: center;
+}
+
+.footer-desc-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-site-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-headings {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  font-style: normal;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link:hover {
+  color: #fca311;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 172px;
+  height: 7.563rem;
+}
+
+.socials-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.footer-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+/* Media query for tablets/iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    gap: 100px;
+    padding-left: 90px;
+  }
+}
+
+/* Media query for Laptops and Desktops */
+@media (min-width: 1025px) {
+  /* LANDING PAGE STYLES */
+
+  .header-right-area {
+    gap: 44px;
+  }
+
+  .header-sign-in {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .header-get-started {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    width: 155px;
+    height: 40px;
+  }
+
+  .landing-intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .clapperboard {
+    position: relative;
+    left: 80px;
+    width: 499px;
+    height: 499px;
+    border-radius: 50%;
+  }
+
+  .landing-intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 554px;
+    height: 510px;
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  .landing-intro h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 56px;
+    width: 356px;
+    height: 112px;
+  }
+
+  #first-text {
+    width: 430px;
+    height: 120px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    /* margin: 57px auto; */
+  }
+
+  #second-text {
+    width: 313px;
+    height: 80px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 47px auto;
+  }
+
+  .landing-intro button {
+    text-decoration: none;
+    width: 250px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    border: none;
+    color: #010210;
+  }
+
+  .landing-section-2-top h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    width: 528px;
+    height: 80px;
+  }
+
+  .landing-section-2-top p {
+    width: 794px;
+    height: 80px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .landing-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 180px;
+  }
+
+  .landing-section-2-image {
+    width: 320px;
+    height: 273.64px;
+  }
+
+  .landing-section-2-image img {
+    width: 276.36px;
+    height: 197.27px;
+  }
+
+  .landing-section-2-content h4 {
+    width: 286px;
+    height: 72px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .landing-section-2-content p {
+    width: 281px;
+    height: 108px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .landing-section-2 button {
+    width: 250px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .landing-section-3 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: flex-start;
+    gap: 27px;
+    text-align: left;
+  }
+
+  .featured-movies h3 {
+    width: 174px;
+    height: 47px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .featured-movies p {
+    width: 307px;
+    height: 168px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    margin-top: 51px;
+  }
+
+  .landing-movies-thumbnail {
+    height: fit-content;
+  }
+
+  .landing-movie-details {
+    width: 315px;
+  }
+
+  .landing-movie-details h1 {
+    width: 226px;
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .star-wrapper {
+    width: 104px;
+    height: 16px;
+  }
+
+  .movie-time {
+    width: 42px;
+    height: 12px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 17.33px;
+  }
+
+  .movie-time p {
+    width: 232px;
+    height: 47px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .faq-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 208px 147px;
+  }
+
+  .faq-image-wrapper {
+    width: 509.47px;
+    height: 441px;
+  }
+
+  .faq-speaker {
+    width: 301px;
+    height: 308px;
+  }
+
+  .faq {
+    width: 501px;
+  }
+
+  .faq h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 45px;
+  }
+
+  .faq p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 44px;
+    margin-bottom: 7px;
+  }
+
+  .question-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+  }
+
+  .answer1,
+  .answer2,
+  .answer3,
+  .answer4,
+  .answer5 {
+    display: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffffb6;
+  }
+
+  .answer2 a {
+    color: #fca311;
+  }
+
+  .answer2 a:hover {
+    cursor: pointer;
+    color: #e5e5e5;
+  }
+
+  .question1:hover,
+  .question2:hover,
+  .question3:hover,
+  .question4:hover,
+  .question5:hover {
+    cursor: pointer;
+  }
+
+  .question1:hover .answer1,
+  .question2:hover .answer2,
+  .question3:hover .answer3,
+  .question4:hover .answer4,
+  .question5:hover .answer5 {
+    display: block;
+  }
+
+  .faq-cross {
+    width: 61.32px;
+    height: 61.32px;
+    top: 310px;
+    left: 200px;
+  }
+
+  .faq-oval {
+    width: 61.97px;
+    height: 61.97px;
+    right: 730px;
+    top: 180px;
+  }
+
+  /* END OF LANDING PAGE STYLES */
+
+  /* SIGN-IN STYLES */
+  .top-container {
+    height: 100vh;
+  }
+
+  .top-logo {
+    position: absolute;
+    width: 92px;
+    height: 115px;
+    left: 70px;
+    top: 40px;
+  }
+
+  .login-text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    width: 336px;
+    height: 38px;
+  }
+
+  .sign-in-email,
+  input[type="password"] {
+    width: 755px;
+    height: 96px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  input::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .sign-in-area button {
+    width: 222px;
+    height: 65px;
+  }
+
+  .forgot-password {
+    text-decoration: underline;
+  }
+
+  /* END OF SIGN-IN STYLES */
+
+  /* DASHBOARD STYLES */
+
+  .header-for-mobile {
+    display: none;
+  }
+  .header-for-desktop {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #01010b;
+    box-shadow: 0px -20px 21px 20px rgb(255 255 255 / 18%);
+  }
+  .header-for-desktop .search-fields {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  .header-for-desktop .search-fields input,
+  select {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 8px;
+    width: 30%;
+    max-width: 260px;
+    padding: 0.6em;
+  }
+
+  .search-fields input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #8a8989;
+  }
+
+  .main-wrapper {
+    height: 1504px;
+  }
+
+  .main-wrapper nav {
+    top: unset;
+    left: 0;
+    width: 280px;
+    height: 1424px;
+    max-width: 300px;
+    margin-top: 5em;
+    padding: 1em 0 0 2.3em;
+    transition: 0ms ease-in-out all;
+  }
+  .main-wrapper nav h4 {
+    margin: 1em 0;
+  }
+  .main-wrapper nav a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    text-decoration: none;
+  }
+  .main-wrapper nav li {
+    list-style: none;
+    line-height: 45px;
+  }
+  nav li a img {
+    margin-right: 16px;
+  }
+  .main-wrapper nav li:focus,
+  .main-wrapper nav li:active,
+  .main-wrapper nav li:hover {
+    filter: invert(64%) sepia(44%) saturate(1066%) hue-rotate(351deg)
+      brightness(102%) contrast(98%);
+    border-right: 10px solid #1d3f4b;
+  }
+  .main-wrapper nav #close-icon {
+    display: none;
+  }
+  .dashboard-main {
+    margin-left: 280px;
+    padding-top: 5.5em;
+    height: 1504px;
+  }
+
+  /* END OF DASHBOARD STYLES */
+
+  /* FORGOT PASSWORD STYLES */
+
+  .forgot-password-main h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .forgot-password-main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .checkbox-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .forgot-password-form small {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 768px;
+    height: 38px;
+    color: #ffffff;
+  }
+
+  .forgot-password-form button {
+    width: 280px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    border: none;
+  }
+
+  .forgot-password-form input[type="email"] {
+    width: 560px;
+    height: 96px;
+  }
+
+  .otp-input-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .otp-input {
+    width: 75px;
+    color: #ffffff;
+    margin-right: 0.3rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    height: 75px;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 28px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 0.1s;
+  }
+
+  .otp-input:focus {
+    border: 1px solid #40dee8;
+  }
+  .otp-text {
+    font-size: 1.5rem;
+    line-height: 38px;
+  }
+  .expire {
+    font-style: italic;
+  }
+  .time {
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .reset-password {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 19px;
+    color: #fca311;
+  }
+
+  .reset-password:hover {
+    text-decoration: underline;
+  }
+
+  /* END OF FORGOT PASSWORD STYLES */
+
+  /* TERMS STYLES */
+
+  .terms.header {
+    padding: 9px 25px;
+  }
+
+  .terms.logo img {
+    width: 20px;
+    height: 25.2px;
+  }
+
+  .terms.buttons a {
+    height: 26px;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .terms.signUp {
+    width: 68px;
+    margin-left: 26px;
+  }
+
+  .terms.signIn {
+    width: 68px;
+  }
+
+  .terms.h1 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 26px;
+  }
+
+  .terms.h2Content {
+    margin-bottom: 16px;
+  }
+
+  .terms.h2 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .terms.content {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .terms.main {
+    padding: 11px 25px;
+  }
+
+  .terms.h3 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .liCounter.h3 {
+    padding-bottom: 10px;
+  }
+
+  .liCounter.h3::before {
+    font-size: 12px;
+  }
+
+  .permOl {
+    list-style-position: outside;
+    padding-left: 15px;
+  }
+
+  /* END OF TERMS STYLES */
+
+  /* LIBRARY STYLES */
+
+  .library--header {
+    background: #01010b;
+    box-shadow: 0px 1px 21px rgba(229, 229, 229, 0.15);
+  }
+
+  .library.searchCategory {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .notifications {
+    display: block;
+  }
+
+  .searchIcon {
+    display: block;
+  }
+
+  .library.header.search,
+  .library.header.category {
+    background: transparent;
+    border: 1px solid #fff;
+  }
+
+  .library.header.searchWrap,
+  .library.header.categoryWrap {
+    background: transparent;
+  }
+
+  .library.header.searchWrap input,
+  .library.header.categoryWrap input {
+    background: transparent;
+    font-size: 20px;
+  }
+
+  .library.icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .library.dropSearchCategory {
+    display: none;
+  }
+
+  .library.sideBar {
+    display: block;
+    width: 20%;
+    padding-top: 32px;
+    padding-left: 36px;
+  }
+
+  .sideBarHeading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .library.sideBar {
+    padding-left: 10px;
+  }
+
+  .library.sideBar.active {
+    display: block;
+    width: 3%;
+    padding-top: 32px;
+    padding-left: 0;
+  }
+
+  .library.sideBar.active .sideBarHeadingListP.active {
+    display: none;
+  }
+
+  .library.sideBar.active .sideBarHeadingList.comp {
+    display: none;
+  }
+
+  .library.main {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .moviesSection {
+    width: 80%;
+  }
+
+  .moviesSection.active {
+    width: 97%;
+  }
+
+  .sideBarHeading {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-bottom: 17px;
+  }
+
+  .sideBarHeadingLink {
+    color: white;
+  }
+
+  .sideBarHeadingList {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 19px;
+  }
+
+  .comp {
+    padding-left: 10px;
+  }
+
+  .sideBarHeadingList p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  .lib {
+    border-right: 4px solid #fca311;
+  }
+
+  .lib p {
+    color: #fca311;
+  }
+
+  .library.completedMovies,
+  .library.continueWatching {
+    padding: 16px;
+  }
+
+  .library.completedMovies--left p,
+  .library.continueWatching--left p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .library.completedMovies--top,
+  .library.continueWatching--top {
+    margin-bottom: 23px;
+  }
+
+  .library.arrowCircle {
+    width: 21px;
+    height: 21px;
+  }
+
+  .library.completedMovies--bottom,
+  .library.continueWatching--bottom {
+    gap: 16px;
+  }
+
+  .library.moviesImg progress[value] {
+    height: 6px;
+  }
+
+  .library.movieTitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 16px;
+  }
+
+  .library.movieRating {
+    width: 55%;
+    gap: 16.67px;
+    margin-bottom: 17px;
+  }
+
+  .library.movieCreator {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .library.movieViews {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    gap: 4px;
+  }
+
+  .library.movieViews svg {
+    width: 4px;
+    height: 4px;
+  }
+
+  /* END OF LIBRARY STYLES */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    height: 25.25rem;
+    width: 100%;
+    text-align: left;
+    padding: 39px 190px 33px 75px;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, auto));
+    column-gap: 234px;
+    height: 20.75rem;
+    width: 81.61%;
+    align-items: start;
+  }
+
+  .footer-description {
+    width: 279px;
+    text-align: left;
+  }
+
+  .footer-desc-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .footer-site-map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 185px;
+    text-align: left;
+  }
+
+  .footer-headings {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+  }
+
+  .footer-list {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 244px;
+  }
+
+  .footer-phone p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+  }
+
+  #rights {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    width: 215px;
+  }
+}
