@@ -250,6 +250,9 @@
                 {{form.category}} <br><br>
                 <h3 style="color: white;">Movie</h3>
                 {{form.movie}} 
+                {%if length_error %}
+                <h2 style="color: rgb(255, 0, 0);">{{length_error}}</h2><br><br>
+                {%endif%}
                 <h3 style="color: white;">Thumbnail</h3>
                 {{form.thumbnail}} 
                 <br>
@@ -265,9 +268,7 @@
                 {%else%}
                 <h2 style="color: white;">You're Not Authorized To Be Here!!!</h2>
                 {%endif%}
-                {%if length_error %}
-                <h2 style="color: white;">{{length_error}}</h2>
-                {%endif%}
+                
                 {%if val_error == True %}
                 <h2 style="color: rgb(248, 8, 8);">{{validation_error}}</h2>
                 {%endif%}
