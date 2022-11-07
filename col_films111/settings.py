@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-s!w7yzmi0hwq2_sh7xyle5i1*to22rj&-bco_xx&sdr#l@1qp$'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['zurifordummies', '127.0.0.1', 'localhost', 'onecube.herokuapp.com', 'www.onecube.zurifordummies.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,12 +87,8 @@ WSGI_APPLICATION = 'col_films111.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd953ap9806rs2b',
-        'HOST': 'ec2-54-86-106-48.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'smfsluddxhyajj',
-        'PASSWORD': 'c9e3ce3c78d126953d2f67118a4d09eb42ce7eb0ee18ebd44675414d0237ff3d'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -130,8 +127,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

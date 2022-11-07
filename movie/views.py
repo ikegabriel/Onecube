@@ -6,6 +6,7 @@ from .forms import MovieCreateForm
 from django.views.generic.edit import DeleteView
 from moviepy.editor import *
 
+from django.http.response import JsonResponse
 
 def index(request):
     movs = Movie.objects.all()[:3]
@@ -97,9 +98,14 @@ def movie_detail(request, pk):
     if collect_likes.likes.filter(id=request.user.id).exists():
         liked = True
     total_likes = collect_likes.total_likes()
+    if total_likes < 1:
+        total_likes = 0
+        print('lower')
     if collect_likes.dislikes.filter(id=request.user.id).exists():
         disliked = True
     total_dislikes = collect_likes.total_dislikes()
+    if total_dislikes < 1:
+        total_dislikes = 0
     data = {
         'film': mov,
         'total_likes': total_likes,
@@ -153,10 +159,11 @@ def add_likes(request, pk):
         
     else:
         post.likes.add(request.user)
+        post.dislikes.remove(request.user)
         liked = True
         
-
-    return redirect('detail', pk)
+    return JsonResponse({'like_result':post.total_likes(), 'dislike_result':post.total_dislikes()})
+    # return ('detail', pk)
 
 def add_dislikes(request, pk):
     post = get_object_or_404(Movie, id=pk)
@@ -169,10 +176,11 @@ def add_dislikes(request, pk):
         
     else:
         post.dislikes.add(request.user)
+        post.likes.remove(request.user)
         disliked = True
         
 
-    return redirect('detail', pk)
+    return JsonResponse({'like_result':post.total_likes(), 'dislike_result':post.total_dislikes()})
 
 def my_movies(request):
     if not request.user.id:

@@ -47,8 +47,8 @@ class Movie(models.Model):
     length = models.CharField(max_length=100, null=True, blank=True)
     upload_date = models.DateTimeField(auto_now_add=True, null=True)
     favourites = models.ManyToManyField(User, related_name='favourite', default=None, blank=True)
-    likes = models.ManyToManyField(User, related_name='movie_likes')
-    dislikes = models.ManyToManyField(User, related_name='movie_dislikes')
+    likes = models.ManyToManyField(User, default=0, related_name='movie_likes')
+    dislikes = models.ManyToManyField(User, default=0, related_name='movie_dislikes')
 
 
     def total_likes(self):
