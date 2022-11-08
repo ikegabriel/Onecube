@@ -259,11 +259,11 @@
                         <div class="videoI icons">
                             <a id="ajax_like" href="{%url 'like' film.id%}"><img src="{%static 'thumbsup.png'%}" alt="#"></a>
                             {%csrf_token%}
-                            <span id="new_likes">{{film.total_likes}}</span>
+                            <span id="new_likes_mobile">{{film.total_likes}}</span>
                             
                            <a id="ajax_dislike" href="{%url 'dislike' film.id%}"><img src="{%static 'thumbsdown.png'%}" alt="#"></a>
                            {%csrf_token%}
-                            <span id="new_dislikes">{{film.total_dislikes}}</span>
+                            <span id="new_dislikes_mobile">{{film.total_dislikes}}</span>
                             <a href="{{film.movie.url}}" download><img  src="{%static 'download.png'%}" alt="#"></a>
                             {%if fav %}
                             <a id="if_fav" href="{%url 'add_favourites' film.id%}"><span><img height="10" width="10" src="{%static 'star.png'%}" alt=""></span></a>
@@ -496,7 +496,9 @@
             },
             success: function (json){
                 document.getElementById('new_likes').innerHTML = json['like_result']
+                document.getElementById('new_likes_mobile').innerHTML = json['like_result']
                 document.getElementById('new_dislikes').innerHTML = json['dislike_result']
+                document.getElementById('new_dislikes_mobile').innerHTML = json['dislike_result']
                 console.log(json)
             },
             error: function (xhr, errmsg, err){
@@ -517,7 +519,9 @@
             },
             success: function (json){
                 document.getElementById('new_likes').innerHTML = json['like_result']
+                document.getElementById('new_likes_mobile').innerHTML = json['like_result']
                 document.getElementById('new_dislikes').innerHTML = json['dislike_result']
+                document.getElementById('new_dislikes_mobile').innerHTML = json['dislike_result']
                 console.log(json)
             },
             error: function (xhr, errmsg, err){
