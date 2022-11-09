@@ -127,17 +127,26 @@ def list_movie(request):
 def add_favourite(request, id):
     film = get_object_or_404(Movie, id=id)
     user = request.user
+    fav = False
     if film.favourites.filter(id=request.user.id).exists():
         film.favourites.remove(request.user)
-        return redirect('detail', id)
+        fav = False
+        return JsonResponse({'fav':fav})
     else:
         film.favourites.add(request.user)
-        return redirect('detail', id)
-    return redirect('library')
+        fav = True
+        return JsonResponse({'fav':fav})
 
-# def list_favourites(request):
-#     favs = Movie.objects.filter(favourites=request.user)
-#     return render(request, 'favourites.html', {'favs':favs})
+
+def get_favourites(request, id):
+    film = get_object_or_404(Movie, id=id)
+    fav = ''
+    if film.favourites.filter(id=request.user.id).exists():
+        fav = 'True'
+        return JsonResponse({'fav':fav})
+    else:
+        fav = 'False'
+        return JsonResponse({'fav':fav})
 
 
 

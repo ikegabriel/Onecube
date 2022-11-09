@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import delete, my_videos, settings, terms, index, my_movies, modal, movie_detail, dashboard, create_movie, list_movie,add_favourite, add_likes, add_dislikes
+from .views import get_favourites, delete, my_videos, settings, terms, index, my_movies, modal, movie_detail, dashboard, create_movie, list_movie,add_favourite, add_likes, add_dislikes
 
 urlpatterns = [
     path('', index, name="home"),
@@ -17,4 +17,5 @@ urlpatterns = [
     path('terms/', terms, name="terms"),
     path('settings/', settings, name="settings"),
     path('my_videos/', my_videos, name="my_videos"),
+    path('get_favourites/<int:id>/', get_favourites, name="get_favourites")
 ]
